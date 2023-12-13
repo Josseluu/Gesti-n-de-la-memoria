@@ -24,6 +24,7 @@ int main() {
         printf("Child reads: %s\n", shared_memory);
         munmap(shared_memory, SIZE);
         exit(EXIT_SUCCESS);
+
     } else {
         const char *message = "Hello, child process!";
         memcpy(shared_memory, message, strlen(message) + 1); // +1 for the null terminator
