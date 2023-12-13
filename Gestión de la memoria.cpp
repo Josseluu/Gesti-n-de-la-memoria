@@ -30,6 +30,5 @@ int main() {
         wait(NULL);
         munmap(shared_memory, SIZE);
     }
-
     return 0;
 }
