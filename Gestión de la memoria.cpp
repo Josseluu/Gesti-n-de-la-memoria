@@ -19,6 +19,7 @@ int main() {
     if (pid < 0) {
         perror("fork");
         exit(EXIT_FAILURE);
+
     } else if (pid == 0) {
         printf("Child reads: %s\n", shared_memory);
         munmap(shared_memory, SIZE);
