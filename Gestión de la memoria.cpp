@@ -14,7 +14,6 @@ int main() {
         perror("mmap");
         exit(EXIT_FAILURE);
     }
-
     pid_t pid = fork();
     if (pid < 0) {
         perror("fork");
